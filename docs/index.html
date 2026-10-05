@@ -4,6 +4,7 @@
 <title>comfy-mcp-fixes · VIOLINET Tech</title>
 <meta name="description" content="Gotchas from building a custom ComfyUI node with a web UI and driving it from an agent.">
 <meta property="og:title" content="comfy-mcp-fixes · VIOLINET Tech"><meta property="og:description" content="Gotchas from building a custom ComfyUI node with a web UI and driving it from an agent.">
+<meta property="og:image" content="https://violinet-tech.github.io/comfy-mcp-fixes/cover.webp"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
@@ -39,7 +40,7 @@ footer a{color:var(--orchid)}
 <p class="eyebrow">Agent skill</p>
 <h1>comfy-mcp-fixes</h1>
 <p class="lede">Make a custom ComfyUI node's UI actually show</p>
-<div class="card"><p>Gotchas from building a custom ComfyUI node with a web UI and driving it from an agent. A pack's JS only loads if its <code>__init__.py</code> exports <code>WEB_DIRECTORY</code>. DOM widgets must come from <code>node.addDOMWidget</code>: the other route returns a widget with a null element and never throws. <code>restart_comfyui</code> cannot restart a server comfy-cli did not launch, and a leftover comfy-cli server can block ComfyUI Desktop from updating.</p></div>
+<div class="card"><img class="cover" src="cover.webp" alt="A mechanic with a flashlight inspecting a tangled patch panel of glowing violet and cyan cables." loading="lazy"><p>Gotchas from building a custom ComfyUI node with a web UI and driving it from an agent. A pack's JS only loads if its <code>__init__.py</code> exports <code>WEB_DIRECTORY</code>. DOM widgets must come from <code>node.addDOMWidget</code>: the other route returns a widget with a null element and never throws. <code>restart_comfyui</code> cannot restart a server comfy-cli did not launch, and a leftover comfy-cli server can block ComfyUI Desktop from updating.</p></div>
 <div class="trig"><b>Use when:</b> a ComfyUI custom node's widget or overlay is missing or empty, <code>restart_comfyui</code> says <code>no_background_server</code>, or a comfy-cli server blocks Desktop from updating.</div>
 <h2>Install</h2>
 <div class="cmd"><span id="cmd">git clone https://github.com/Violinet-tech/comfy-mcp-fixes ~/.claude/skills/comfy-mcp-fixes</span><button type="button" onclick="navigator.clipboard.writeText(document.getElementById('cmd').textContent);this.textContent='Copied'">Copy</button></div>
