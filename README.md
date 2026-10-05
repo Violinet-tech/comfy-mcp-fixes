@@ -4,6 +4,8 @@ Agent skill: fixes for ComfyUI custom-node UIs that won't show, restart_comfyui 
 
 An agent skill from [VIOLINET Tech](https://github.com/Violinet-tech). It is a folder with a `SKILL.md`, written from a real job and the mistakes made on the way. It works in Claude Code and any harness that reads the `SKILL.md` format, and the markdown is readable as plain docs without an agent.
 
+Page: https://violinet-tech.github.io/comfy-mcp-fixes/
+
 ## Use it when
 
 a ComfyUI custom node's widget or overlay is missing or empty, `restart_comfyui` fails with `no_background_server`, or a comfy-cli server blocks ComfyUI Desktop from updating.
